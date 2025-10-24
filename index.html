@@ -3,112 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Bootstrap Page</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <style>
-    body {
-      background: blue;
-      padding-bottom: 50px;
-    }
-
-    /* Screen under 800px wide */
-    @media (max-width: 800px) {
-      body {
-        background: pink;
-      }
-    }
-
-    /* Screen under 430px wide */
-    @media (max-width: 430px) {
-      body {
-        background: yellow;
-      }
-    }
-
-    .card img {
-      height: 250px;
-      object-fit: cover;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+  <nav>
+    <div class="navbar">
+      <div class="navlist">
+        <button class="logo">
+          <p class="circle">&lt;&gt;</p>
+        <a>Clara</a>
+        </button>
+        <ul class="navbar-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Service</a></li>
+           
         </ul>
+        <div class="navleft">
+          <button class="contact-btn" >Contact Me </button>
+          <button id="menu" class="menu-btn" onclick="">Menu </button>
+        </div>
+        <div id="sidenav" class="sidenav">
+          <div>
+            <div id="close-btn" class="close-btn_div"><button>close</button></div>
+          
+            <div class="sidenav-items">
+              <ul class="sidenav-list">
+              
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+                <li><button>Contact Me</button></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Service</a></li>
+           
+              </ul>
       </div>
+          </div>
+
+        </div>
+      </div>
+      
     </div>
   </nav>
-
-  <!-- ===== PRODUCT CARDS ===== -->
-  <div class="container mt-5">
-    <div class="row g-4">
-      
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="images/card1.jpg" class="card-img-top" alt="Product">
-          <div class="card-body text-center">
-            <h5 class="card-title">Winter Jacket</h5>
-            <p class="card-text fw-bold">$90</p>
-            <a href="#" class="btn btn-primary">Purchase</a>
-          </div>
-        </div>
+   <div class="hero-section">
+    <div class="intro">
+      <div class="intro-txt">
+      <h4>Hello There,</h4>
+      <h1>I'm<span class="name"> Olivia Smith </span> Product Designer Based In USA</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere veritatis laborum illo!</p>
       </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="images/card2.jpg" class="card-img-top" alt="Product">
-          <div class="card-body text-center">
-            <h5 class="card-title">Winter Jacket</h5>
-            <p class="card-text fw-bold">$200</p>
-            <a href="#" class="btn btn-primary">Purchase</a>
-          </div>
-        </div>
+      <div class="intro-buttons">
+        <div class="portfolio-btns">
+      <button class="intro-btn1">View My Portfolio</button>
+      <button class="play-btn">&gt;</button>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card h-100">
-          <img src="images/card3.jpg" class="card-img-top" alt="Product">
-          <div class="card-body text-center">
-            <h5 class="card-title">Winter Jacket</h5>
-            <p class="card-text fw-bold">$30</p>
-            <a href="#" class="btn btn-primary">Purchase</a>
-          </div>
-        </div>
+      <button class="intro-btn2">Hire Me</button>
       </div>
-
     </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="intro-image">
+     <img class="sideimage"src="images/oliviasmith.png" alt="bootstrap image" >
+    </div>
+  </div> 
 </body>
+<script src="./js/myscript.js"></script>
 </html>
